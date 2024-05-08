@@ -23,6 +23,7 @@ test_db:
 
 create_db: .env
 	docker compose run server create_db
+	docker compose run server pip install openai
 
 create_database: create_db
 
